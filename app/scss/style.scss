@@ -1,13 +1,58 @@
-    html {
-        box-sizing: border-box;
+@import '_vars';
+@import '_global';
+@import '_fonts';
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.header__top-inner-text {
+    margin-left: auto;
+    margin-right: 50px;
+    span {
+        color: $red;
     }
-    
-    *,
-    *::before,
-    *::after {
-        box-sizing: inherit;
+}
+
+.header__top-inner-box-btn {
+    padding: 4px;
+    width: 72px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.btn__login {
+    background-color: $green;
+}
+
+.btn__register {
+    background-color: $red;
+    margin-left: 7px;
+}
+
+.header__bottom {
+    background-color: $darkblue;
+}
+
+.header__bottom-menu {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.header__bottom-menu-list {
+    li {
+        display: inline-block;
+        &+li {
+            margin-left: 30px;
+        }
     }
-    
-    body {
-        background-color: lawngreen;
+    a {
+        color: #fff;
+        font-size: 14px;
     }
+}
