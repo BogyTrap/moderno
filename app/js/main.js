@@ -45,6 +45,8 @@ $(function() {
         return false;
     });
 
+    $('input[type="file"], select').styler();
+
     $('.header__bottom-menu-btn').on('click', function() {
         $('.header__bottom-menu-list').slideToggle();
     });
